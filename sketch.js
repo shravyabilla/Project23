@@ -27,13 +27,13 @@ function setup() {
 	groundSprite=createSprite(width/2, height-35, width,10);
 	groundSprite.shapeColor=color(255)
 
-	bottomSprite=createSprite(400, height-40, 200, 20);
+	bottomSprite=createSprite(400, height-50, 200, 20);
 	bottomSprite.shapeColor = color("red");
 
-	rightSprite=createSprite(495, height-80, 20, 100);
+	rightSprite=createSprite(495, height-90, 20, 100);
 	rightSprite.shapeColor = color("red");
 
-	leftSprite=createSprite(300, height-80, 20, 100);
+	leftSprite=createSprite(300, height-90, 20, 100);
 	leftSprite.shapeColor = color("red");
 
 	engine = Engine.create();
@@ -44,11 +44,8 @@ function setup() {
 	
 
 	//Create a Ground
-	ground = Bodies.rectangle(width/2, 650, width, 20 , {isStatic:true} );
+	ground = Bodies.rectangle(width/2, 635, width, 20 , {isStatic:true} );
  	World.add(world, ground);
-
-	// bottom = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true});
-	// World.add(world, bottom);
 
 	Engine.run(engine);
   
